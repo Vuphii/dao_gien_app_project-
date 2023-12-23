@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UserFragment"
+    android:background="#FFF8F9"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_background">
+
+            <ImageButton
+                android:id="@+id/imagebackbutton"
+                android:layout_width="30dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="116dp"
+                android:layout_marginBottom="6dp"
+                android:src="@drawable/back_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints"
+                android:background="?android:attr/selectableItemBackground"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:text="PROFILE"
+                android:textColor="#e6879c"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:id="@+id/image_user"
+            android:background="@drawable/background_users"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mer Nguyễn "
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_background_user">
+
+            <TextView
+                android:id="@+id/edit_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:padding="10dp"
+                android:text="Edit Profile"
+                android:textColor="#e6879c"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/pen_editprofile"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="4dp" />
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/arrow_order"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <ImageButton
+
+                android:id="@+id/pen_editprofile"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pen_edit_profile"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp"
+                tools:ignore="MissingConstraints" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_background_user">
+
+            <TextView
+                android:id="@+id/my_orde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:padding="10dp"
+                android:text="My Order"
+                android:textColor="#e6879c"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/my_order_fragment"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="4dp" />
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/arrow_order"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <ImageButton
+
+                android:id="@+id/my_order_fragment"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/my_order"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp"
+                tools:ignore="MissingConstraints" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_background_user">
+
+            <TextView
+                android:id="@+id/notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:padding="10dp"
+                android:text="Notification"
+                android:textColor="#e6879c"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/notificaton_frag"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="4dp" />
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/arrow_order"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <ImageButton
+
+                android:id="@+id/notificaton_frag"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/notification"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp"
+                tools:ignore="MissingConstraints" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_background_user">
+
+            <TextView
+                android:id="@+id/log_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:padding="10dp"
+                android:text="Log Out"
+                android:textColor="#e6879c"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/btn_signout"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="4dp" />
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/arrow_order"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <ImageButton
+
+                android:id="@+id/btn_signout"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/log_out"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp"
+                tools:ignore="MissingConstraints" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</ScrollView>

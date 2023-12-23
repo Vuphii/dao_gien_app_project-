@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_background_cart_row"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <ImageView
+            android:id="@+id/image_cart"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="311dp"
+            android:layout_marginBottom="10dp"
+            android:padding="8dp"
+            android:src="@drawable/ship_car"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your order "
+            android:textStyle="bold"
+            android:id="@+id/name_product_notif"
+            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toEndOf="@+id/image_cart"
+            app:layout_constraintBottom_toTopOf="@+id/SL"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#ship123 "
+            android:textStyle="bold"
+            android:id="@+id/your_order"
+            app:layout_constraintStart_toEndOf="@+id/name_product_notif"
+            app:layout_constraintBottom_toTopOf="@+id/SL"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="has been shipped !"
+            android:textStyle="bold"
+            android:id="@+id/name_product_notif_2"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintStart_toEndOf="@+id/your_order"
+            app:layout_constraintBottom_toTopOf="@+id/SL"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/SL"
+            android:text="Time:"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/name_product_notif"
+            android:layout_marginBottom="20dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
